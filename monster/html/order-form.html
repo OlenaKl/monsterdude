@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Templatemonster</title>
+<link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
+<body>
+<header>
+<section class="container">
+    <div class="header-logo">
+        <a href=""><img src="../img/logo-header.png" alt="logo" /></a>
+    </div>
+    <div class="header-menu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Contacts</a></li>
+        </ul>
+        <div class="header-login">
+            <a href="">Log in</a>
+        </div>
+    </div>
+</section>
+</header>
+<section class="order-form">
+    <form action="#" id="form">
+        <div class="form-left-side">
+            <div class="top-level">
+                <input type="text" name="Title" value="Title">
+                <select>
+                    <option value="Essay">Essay</option>
+                    <option value="Essay1">Essay1</option>
+                    <option value="Essay2">Essay2</option>
+                </select>
+            </div>
+            <div class="middle-level">
+                <select class="middle-level_task">
+                    <option value="Essay">Essay</option>
+                    <option value="Essay1">Essay1</option>
+                    <option value="Essay2">Essay2</option>
+                </select>
+                <select class="middle-level_pages">
+                    <option value="Essay">Essay</option>
+                    <option value="Essay1">Essay1</option>
+                    <option value="Essay2">Essay2</option>
+                </select>
+                <input type="date" name="Date" placeholder="MM/DD/YYYY" value="MM/DD/YYYY">
+                <input type="time" name="Title" placeholder="10:00 PM (EST)" value="Title">
+            </div>
+            <div class="low-level">
+                <textarea placeholder="Instructions"></textarea>
+                <input class="upload-file" type="file"
+                id="file" name="Upload file"
+                />
+                <label for="file" class="upload-file">Upload file</label>
+            </div>
+        </div>
+        <div class="form-right-side">
+            <div class="top-level">
+                <div class="form-price">
+                    $95
+                </div>
+            </div>
+            <div class="middle-level">
+                <p>Additional services</p>
+                <div class="checkbox">
+                    <input type="checkbox" id="plagiarism" name="feature"
+                    value="plagiarism"  />
+                    <label for="plagiarism">plagiarism check (+$9.99)</label>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" id="support" name="feature"
+                    value="support"  />
+                    <label for="support">VIP support (+5.99)</label>
+                </div>
+                <button type="submit" form="form" value="Send">Get it done</button>
+                <span>I agree with policies and<br> 
+                    terms and conditions<br>
+                    by clicking button above</span>
+            </div>
+        </div>
+    </form>
+</section>   
+</body>
+</html>

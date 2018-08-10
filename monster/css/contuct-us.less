@@ -1,0 +1,80 @@
+.contuct-us{
+    background: url('../img/background.png') 50% no-repeat; 
+    .container{
+        max-width: 960px;
+        display: flex;
+        flex-direction: row;
+        padding-top: 200px;
+        padding-bottom: 100px; 
+    }
+    .contuct-us_text{
+        flex: 1 0 50%;
+        position: relative;
+        .header{
+            font-family: 'FuturaMediumCTT';
+            font-size: 60px;
+            line-height: 63px;
+        }
+        .phone{
+            font-size: 21px;
+            font-family: 'FuturaLightCTT';
+            padding: 40px 0 20px;
+        }
+        .pink-dude{
+            position: absolute;
+            right: 0;
+            bottom: -100px;
+        }
+    }
+    .contuct-us_form{
+        flex: 1 0 50%;
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        #form{
+            display: flex;
+            flex-direction: column;
+            font-family: 'FuturaLightCTT';
+            align-items: center;
+            width: 329px;
+            input{
+                width: 329px;
+                height: 44px;
+                border: 0;
+                padding-left: 10px;
+                font-size: 21px;
+                box-sizing: border-box;
+                margin-bottom: 20px;
+            }
+            textarea{
+                width: 329px;
+                height: 118px;
+                border: 0;
+                padding-left: 10px;
+                font-size: 21px;
+                box-sizing: border-box;
+            }
+            button{
+                margin-top: 20px;
+                align-self: flex-end;
+                display: block;
+                box-sizing: border-box;
+                width: 103px;
+                height: 32px;
+                text-align: center;
+                font-size: 21px;
+                text-decoration: none;
+                color: #fff;
+                background: #33CCFF;
+                border-radius: 40px;
+                border: 1px solid #33CCFF;
+                transition: 0.3s;
+                cursor: pointer;
+                &:hover{
+                    border: 1px solid #fff;
+                    background: transparent;
+                }
+            }
+        }
+    }
+}

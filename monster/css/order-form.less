@@ -1,0 +1,139 @@
+.order-form{
+    background: url('../img/background1.png') 50% no-repeat;
+    padding: 120px 0;
+    form{
+        font-family: 'FuturaLightCTT';
+        display: flex;
+        justify-content: space-around;
+        select{
+            box-sizing: border-box;
+            padding-left: 10px;
+            border: 1px solid black;
+            background: #fff url('../img/arrow_down.png') 97% no-repeat;
+            outline: none;
+            border-radius: 0;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance:  none;
+            font-size: 21px;
+        }
+        input, textarea{
+            box-sizing: border-box;
+            padding-left: 10px;
+            border: 1px solid black;
+            background: #fff;
+            font-size: 21px;
+        }
+        .form-left-side{
+            width: 329px;
+            .top-level{
+                input{
+                    width: 329px;
+                    height: 44px;
+                    margin-bottom: 20px;
+                }
+                select{
+                    width: 329px;
+                    height: 44px;
+                    margin-bottom: 20px;
+                }
+            }
+            .middle-level{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                select, input{
+                    height: 44px;
+                    width: 160px;
+                }
+                select{
+                    margin-bottom: 20px;
+                }
+            }
+            .low-level{
+                textarea{
+                    padding-top: 10px;
+                    width: 329px;
+                    height: 128px;
+                    box-sizing: border-box;
+                    outline: none;
+                    margin-top: 20px;
+                    &::-webkit-input-placeholder {
+                        color: #333;
+                        font-family: 'FuturaLightCTT';
+                        font-size: 21px;
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: #333;
+                        font-family: 'FuturaLightCTT';
+                        font-size: 21px; 
+                    }
+
+                    &::-moz-placeholder {  /* Firefox 19+ */
+                        color: #333;
+                        font-family: 'FuturaLightCTT';
+                        font-size: 21px;
+                    }
+
+                    &:-ms-input-placeholder {
+                        color: #333;
+                        font-family: 'FuturaLightCTT';
+                        font-size: 21px;  
+                    }
+                }
+                #file{
+                    display: none;
+                }
+                .upload-file{
+                    font-family: "FuturaLightCTT";
+                    font-size: 21px;
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+        .form-right-side{
+            margin-top: -12px;
+            .top-level{
+                .form-price{
+                    font-family: 'FuturaDemiCTT';
+                    font-size: 72px;
+                }
+            }
+            .middle-level{
+                font-family: 'FuturaLightCTT';
+                font-size: 21px;
+                p{
+                    margin-top: 20px;
+                    margin-bottom: 40px;  
+                }
+                button{
+                    width: 216px;
+                    height: 72px;
+                    background: #33CCFF;
+                    font-size: 36px;
+                    color: #fff;
+                    border: 3px solid #33CCFF;
+                    border-radius: 40px;
+                    outline: none;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    margin: 45px 0;
+                    &:hover{
+                        background: transparent;
+                        border: 3px solid #33CCFF;
+                        color: #33CCFF;
+                    }
+                }
+                span{
+                    display: block;
+                    color: #33CCFF;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
