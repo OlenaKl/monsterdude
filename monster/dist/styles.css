@@ -41,10 +41,8 @@ p {
   padding: 0 20px 0 20px;
 }
 header {
-  position: fixed;
-  z-index: 10;
-  width: 100%;
-  background: #fff;
+  position: relative;
+  z-index: 1;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.36);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.36);
 }
@@ -990,41 +988,32 @@ footer .content span {
   color: #33CCFF;
   font-size: 18px;
 }
-.about-us-all .container {
+.about-us .container {
   position: relative;
   max-width: 1000px;
 }
-.about-us-all .background-blue {
+.about-us .background-blue {
   position: absolute;
   width: 100%;
   height: 100%;
   background: #33CCFF;
-  -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 100%);
-  clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 100%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 95%);
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 95%);
   z-index: 1;
 }
-.about-us-all .about-us_welcome-context {
+.about-us .about-us_welcome-context {
   position: relative;
   z-index: 2;
-  padding: 150px 0 50px;
+  padding: 150px 0;
 }
-.about-us-all .about-us_welcome-context .button {
-  position: relative;
-}
-.about-us-all .about-us_welcome-context .button img {
-  position: absolute;
-  bottom: -108px;
-  right: 50%;
-  margin-right: -271px;
-}
-.about-us-all .about-us_welcome-context .header {
+.about-us .about-us_welcome-context .header {
   font-family: 'FuturaMediumCTT';
   color: #fff;
   text-align: center;
   font-size: 60px;
-  margin-bottom: 50px;
 }
-.about-us-all .about-us_welcome-context .context {
+.about-us .about-us_welcome-context .context {
+  margin-top: 50px;
   padding: 50px;
   font-family: 'FuturaLightCTT';
   font-size: 21px;
@@ -1034,148 +1023,4 @@ footer .content span {
   margin: 0 auto;
   -webkit-clip-path: polygon(3% 0, 100% 0, 100% 100%, 5% 93%);
   clip-path: polygon(3% 0, 100% 0, 100% 100%, 5% 93%);
-}
-.about-us-all .about-us_welcome-context .start {
-  width: 216px;
-  height: 72px;
-  color: #fff;
-  font-family: 'FuturaMediumCTT';
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin: 60px auto 0;
-  font-size: 36px;
-  background: #FFCC00;
-  border-radius: 38px;
-  padding-top: 13px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.about-us-all .about-us_welcome-context .start:hover {
-  background: #fff;
-  color: #FFCC00;
-}
-.about-us-all .about-us_welcome-context .header-goals {
-  font-family: 'FuturaMediumCTT';
-  color: #fff;
-  text-align: center;
-  font-size: 60px;
-  margin-bottom: 50px;
-  padding-top: 200px;
-  margin-bottom: 0;
-}
-.goals {
-  position: relative;
-  top: -100px;
-  padding: 70px 0;
-  z-index: 2;
-  background: #FFCC00;
-  -webkit-clip-path: polygon(0 16%, 100% 6%, 100% 75%, 0 100%);
-  clip-path: polygon(0 8%, 100% 6%, 100% 91%, 0 100%);
-}
-.goals .goals-list .goals-list_item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.goals .goals-list .goals-list_item span {
-  font-family: 'FuturaMediumCTT';
-  font-size: 140px;
-  color: #fff;
-}
-.goals .goals-list .goals-list_item .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-.goals .goals-list .goals-list_item .content .header-list {
-  font-size: 36px;
-  font-family: 'FuturaBookCTT';
-}
-.goals .goals-list .goals-list_item .content .header-content {
-  font-size: 21px;
-  font-family: 'FuturaLightCTT';
-  max-width: 70%;
-}
-.give-try {
-  position: relative;
-}
-.give-try .background-triangle {
-  position: absolute;
-  background: url(../img/triangle.png) 50% no-repeat;
-  height: 288px;
-  width: 100%;
-  top: -180px;
-}
-.give-try .background-blue_give-try {
-  position: absolute;
-  width: 100%;
-  height: calc(100% + 200px);
-  top: -200px;
-  background: #33CCFF;
-  -webkit-clip-path: polygon(5% 0, 91% 0, 88% 95%, 5% 85%);
-  clip-path: polygon(5% 0, 91% 0, 88% 95%, 5% 85%);
-}
-.give-try img {
-  position: absolute;
-  top: -151px;
-  left: 35%;
-  z-index: 2;
-}
-.give-try .give-try_context {
-  position: relative;
-  z-index: 2;
-  width: 80%;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-bottom: 150px;
-}
-.give-try .give-try_context .try-header {
-  font-family: 'FuturaMediumCTT';
-  font-size: 60px;
-  margin-bottom: 20px;
-}
-.give-try .give-try_context .try-context {
-  font-family: 'FuturaBookCTT';
-  font-size: 36px;
-  color: #fff;
-}
-.give-try .give-try_context a {
-  width: 216px;
-  height: 72px;
-  color: #fff;
-  font-family: 'FuturaMediumCTT';
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin-top: 50px;
-  font-size: 36px;
-  background: #FFCC00;
-  border-radius: 38px;
-  padding-top: 13px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-.give-try .give-try_context a:hover {
-  background: #fff;
-  color: #FFCC00;
 }

@@ -1,0 +1,175 @@
+.about-us-all{
+    // background: url('../img/background-us.png') 50% no-repeat;
+    .container{
+        position: relative;
+        max-width: 1000px;
+    }
+     .background-blue{
+        position: absolute;
+        width:100%;
+        height: 100%;
+        background: #33CCFF;
+        -webkit-clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 100%);
+        clip-path: polygon(0 0, 100% 0, 91% 100%, 5% 100%);
+        z-index: 1;
+    }
+    .about-us_welcome-context{
+        position: relative;
+        z-index: 2;
+        padding: 150px 0 50px;
+        .button{
+            position: relative;
+            img{
+                position: absolute;
+                bottom: -108px;
+                right: 50%;
+                margin-right: -271px;
+            }
+        }
+        .header{
+            font-family: 'FuturaMediumCTT';
+            color: #fff;
+            text-align: center;
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        .context{
+            padding: 50px;
+            font-family: 'FuturaLightCTT';
+            font-size: 21px;
+            background: #fff;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+            -webkit-clip-path: polygon(3% 0, 100% 0, 100% 100%, 5% 93%);
+            clip-path: polygon(3% 0, 100% 0, 100% 100%, 5% 93%);
+        }
+        .start{
+            width: 216px;
+            height: 72px;
+            color: #fff;
+            font-family: 'FuturaMediumCTT';
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin: 60px auto 0;
+            font-size: 36px;
+            background: #FFCC00;
+            border-radius: 38px;
+            padding-top: 13px;
+            box-sizing: border-box;
+            transition: 0.3s;
+            &:hover{
+
+                background: #fff;
+                color: #FFCC00;
+            }
+        }
+        .header-goals{
+            .header;
+            padding-top: 200px;
+            margin-bottom: 0;
+        }
+    }
+}
+.goals{
+    position: relative;
+    top: -100px;
+    padding: 70px 0;
+    z-index: 2;
+    background: #FFCC00;
+    -webkit-clip-path: polygon(0 16%, 100% 6%, 100% 75%, 0 100%);
+    clip-path: polygon(0 8%, 100% 6%, 100% 91%, 0 100%);
+    .goals-list{
+        .goals-list_item{
+            display: flex;
+            justify-content: center;
+            span{
+                font-family: 'FuturaMediumCTT';
+                font-size: 140px;
+                color: #fff;
+            }
+            .content{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .header-list{
+                    font-size: 36px;
+                    font-family: 'FuturaBookCTT'
+                }
+                .header-content{
+                    font-size: 21px;
+                    font-family: 'FuturaLightCTT';
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
+
+.give-try{
+    position: relative;
+    .background-triangle{
+        position: absolute;
+        background: url(../img/triangle.png) 50% no-repeat;
+        height: 288px;
+        width: 100%;
+        top: -180px;
+    }
+    .background-blue_give-try{
+        position: absolute;
+        width:100%;
+        height: calc( 100% + 200px);
+        top: -200px;
+        background: #33CCFF;
+        -webkit-clip-path: polygon(5% 0, 91% 0, 88% 95%, 5% 85%);;
+        clip-path: polygon(5% 0, 91% 0, 88% 95%, 5% 85%);;
+    }
+    img{
+        position: absolute;
+        top: -151px;
+        left: 35%;
+        z-index: 2;
+    }
+    .give-try_context{
+        position: relative;
+        z-index: 2;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 150px;
+        .try-header{
+            font-family: 'FuturaMediumCTT';
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .try-context{
+            font-family: 'FuturaBookCTT';
+            font-size: 36px;
+            color: #fff;
+        }
+        a{
+            width: 216px;
+            height: 72px;
+            color: #fff;
+            font-family: 'FuturaMediumCTT';
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            margin-top: 50px;
+            font-size: 36px;
+            background: #FFCC00;
+            border-radius: 38px;
+            padding-top: 13px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            &:hover{
+                background: #fff;
+                color: #FFCC00;
+            }
+        }
+    }
+}

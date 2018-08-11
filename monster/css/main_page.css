@@ -14,10 +14,11 @@ p {
   padding: 0 20px 0 20px;
 }
 header {
-  position: relative;
-  z-index: 1;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background: #fff;
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.36);
-  -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.36);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.36);
 }
 header.main-page-header {
@@ -30,11 +31,20 @@ header.main-page-header.show {
   background: #fff;
 }
 header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 header .container .header-logo {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   position: relative;
 }
@@ -43,8 +53,15 @@ header .container .header-logo a {
   top: 10px;
 }
 header .container .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 header .container .header-menu a {
@@ -59,8 +76,14 @@ header .container .header-menu ul {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 70%;
 }
@@ -68,13 +91,18 @@ header .container .header-menu .header-login {
   width: 30%;
   text-align: center;
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 header .container .header-menu .header-login a {
   max-width: 105px;
   margin: 0 auto;
   line-height: 40px;
+  -ms-flex-item-align: center;
   align-self: center;
   border-radius: 30px;
   padding: 0 20px;
@@ -84,9 +112,17 @@ header .container .header-menu .header-login a {
   position: relative;
 }
 .welcome-section .welcome-section_background {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  -ms-flex-line-pack: stretch;
   align-content: stretch;
   width: 100%;
   height: 100%;
@@ -95,20 +131,31 @@ header .container .header-menu .header-login a {
 .welcome-section .welcome-section_background .white {
   background: #fff;
   height: 100%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
 }
 .welcome-section .welcome-section_background .orange {
   background: #FFCC00;
   height: 100%;
+  -webkit-box-flex: 5;
+  -ms-flex-positive: 5;
   flex-grow: 5;
 }
 .welcome-section .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   position: relative;
   z-index: 2;
 }
 .welcome-section .container .welcome-section_menu {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
   flex-grow: 1;
   position: relative;
   padding-top: 40px;
@@ -118,7 +165,12 @@ header .container .header-menu .header-login a {
   z-index: 2;
 }
 .welcome-section .container .welcome-section_menu .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0;
   margin: 0;
@@ -129,6 +181,7 @@ header .container .header-menu .header-login a {
   color: inherit;
   font-size: 36px;
   font-family: 'FuturaBookCTT';
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .welcome-section .container .welcome-section_menu .content ul a:hover {
@@ -142,6 +195,7 @@ header .container .header-menu .header-login a {
 .welcome-section .container .welcome-section_menu .dude {
   position: absolute;
   right: 119px;
+  -webkit-transform: rotate(-4deg);
   transform: rotate(-4deg);
   z-index: 2;
   bottom: 30px;
@@ -149,6 +203,7 @@ header .container .header-menu .header-login a {
 .welcome-section .container .welcome-section_menu:after {
   content: '';
   position: absolute;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border-top: 760px solid #fff;
   border-right: 50px solid transparent;
@@ -159,28 +214,44 @@ header .container .header-menu .header-login a {
   z-index: 1;
 }
 .welcome-section .container .welcome-section_products {
+  -webkit-box-flex: 7;
+  -ms-flex-positive: 7;
   flex-grow: 7;
   padding-top: 40px;
   padding-left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .welcome-section .container .welcome-section_products .login {
   text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .welcome-section .container .welcome-section_products .login a {
   max-width: 105px;
   margin: 0 auto;
   line-height: 40px;
+  -ms-flex-item-align: center;
   align-self: center;
   text-decoration: none;
   color: inherit;
   line-height: 30px;
   display: block;
   text-align: center;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .welcome-section .container .welcome-section_products .login a:hover {
@@ -198,7 +269,12 @@ header .container .header-menu .header-login a {
   border-color: #fff;
 }
 .welcome-section .container .welcome-section_products .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   max-width: 700px;
   margin-top: 100px;
@@ -210,8 +286,14 @@ header .container .header-menu .header-login a {
   font-family: 'FuturaMediumCTT';
 }
 .welcome-section .container .welcome-section_products .content .content-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .welcome-section .container .welcome-section_products .content .content-row .select {
@@ -245,6 +327,7 @@ header .container .header-menu .header-login a {
 }
 .welcome-section .container .welcome-section_products .button a {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 216px;
   height: 72px;
@@ -256,6 +339,7 @@ header .container .header-menu .header-login a {
   line-height: 70px;
   border-radius: 40px;
   border: 3px solid #33CCFF;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 .welcome-section .container .welcome-section_products .button a:hover {
@@ -295,6 +379,7 @@ header .container .header-menu .header-login a {
 }
 .bestsellers-section .slider .slick-arrow.slick-next {
   right: -20px;
+  -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
   background: url('../img/arrow-back.png') 50% no-repeat;
 }
@@ -308,6 +393,7 @@ header .container .header-menu .header-login a {
 .bestsellers-section .slider .slide .text {
   background: #fff;
   font-family: 'FuturaLightCTT';
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
   max-width: 305px;
@@ -328,8 +414,14 @@ header .container .header-menu .header-login a {
 }
 .why-section {
   padding-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 .why-section .header {
@@ -339,13 +431,20 @@ header .container .header-menu .header-login a {
   padding: 80px 0;
 }
 .why-section .header {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
 }
 .why-section ul {
   list-style-type: none;
   padding: 0;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
 }
 .why-section ul li {
@@ -365,33 +464,48 @@ header .container .header-menu .header-login a {
   background: #FFCC00;
 }
 .why-section ul li:nth-child(2n) {
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 .why-section ul li:nth-child(2n) .why-section_item {
   -webkit-clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 90%);
   clip-path: polygon(9% 0, 100% 0, 100% 100%, 0 90%);
+  -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
   position: relative;
 }
 .why-section ul li:nth-child(2n) .why-section_item .content {
+  -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
 .why-section ul li:nth-child(2n+1) {
+  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 .why-section ul li:nth-child(2n+1) .why-section_item {
   -webkit-clip-path: polygon(0 0, 95% 0, 100% 89%, 0 100%);
   clip-path: polygon(0 0, 95% 0, 100% 89%, 0 100%);
+  -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
   position: relative;
 }
 .why-section ul li:nth-child(2n+1) .why-section_item .content {
+  -webkit-transform: rotate(3deg);
   transform: rotate(3deg);
 }
 .why-section ul li .why-section_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   background: #FF99FF;
 }
@@ -426,7 +540,12 @@ header .container .header-menu .header-login a {
   position: relative;
 }
 .testimonials-section .testimonials-section_slider .testimonials-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
   padding: 50px 50px;
   font-size: 36px;
@@ -438,6 +557,7 @@ header .container .header-menu .header-login a {
 .testimonials-section .testimonials-section_slider .testimonials-slide span {
   font-size: 21px;
   font-family: 'FuturaMediumCTT';
+  -ms-flex-item-align: end;
   align-self: flex-end;
 }
 .testimonials-section .testimonials-section_slider .slick-arrow {
@@ -456,12 +576,17 @@ header .container .header-menu .header-login a {
 .testimonials-section .testimonials-section_slider .slick-arrow.slick-next {
   right: -80px;
   top: 0;
+  -webkit-transform: rotate(166deg);
   transform: rotate(166deg);
   background: url(../img/arrows.png) 50% no-repeat;
 }
 .testimonials-section .testimonials-section_slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   margin: 0;
 }
@@ -493,6 +618,7 @@ header .container .header-menu .header-login a {
   margin: 0 auto;
   background: #33CCFF;
   position: relative;
+  -webkit-transform: rotate(-3deg);
   transform: rotate(-3deg);
 }
 .discount-section .discount p {
@@ -509,6 +635,7 @@ header .container .header-menu .header-login a {
   background: transparent;
   border: 20px solid #FFCC00;
   position: absolute;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   top: 5%;
   left: 1%;
@@ -520,6 +647,7 @@ header .container .header-menu .header-login a {
   background: transparent;
   border: 5px solid #FF99FF;
   position: absolute;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   top: 10%;
   left: 2%;
@@ -545,9 +673,16 @@ footer .header {
   margin-bottom: 20px;
 }
 footer .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
   align-items: flex-start;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 footer .content .adress {
@@ -568,6 +703,8 @@ footer .content ul a {
   font-size: 21px;
 }
 footer .content span {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 100%;
   flex: 1 1 100%;
   text-align: right;
 }
